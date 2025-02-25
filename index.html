@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TuMangaPE🟥⬜🟥</title>
+    <link rel="stylesheet" href="./public/css/style.css">
+</head>
+<body>
+    <header>
+        
+        <section class="menu-bar">
+            <div id="sidebar" class = "sidebar">
+                <div class="toggle-btn">
+                    <span>&#9776</span>
+                </div>
+                <ul class="menu">
+                    <li><a href="index.html"><img src="./assets/img/web_logo.png" class="logo"></a><h1>TuMangaPE 🇵🇪</h1></li>
+                    <a href="index.html"><li>Inicio</li></a>
+                    <a href="biblioteca.html"><li>Biblioteca</li></a>
+                    <a href="nosotros.html"><li>Acerca de Nosotros</li></a>
+                    <a href="contacto.html"><li>Contacto</li></a>
+                </ul>
+            </div>
+
+        </section>
+    </header>    
+
+    <section class="seccion-mangas">
+        <h1 class="titulo">TUMANGAPE</h1>
+        <h3 class="subtitulo">LO MAS POPULAR</h3>
+        <div class="filtro-bar">
+            <form action="/buscar" method="GET">
+                <input type="text" name="query" class="search-input" placeholder="Nombre del Manga">
+                <img src="./assets/img/search-icon.png" alt="Buscar" class="search-icon" onclick="this.closest('form').submit();">
+                <!-- <button type="submit" class="search-button">Buscar</button> -->
+            </form>  
+            <div class="filtro">
+                <select name="filtro" id="filtro">
+                    <option value="todos">Filtro</option>
+                    <option value="accion">Acción</option>
+                    <option value="aventura">Aventura</option>
+                    <option value="comedia">Comedia</option>
+                    <option value="drama">Drama</option>
+                    <option value="fantasia">Fantasía</option>
+                    <option value="magia">Magia</option>
+                    <option value="misterio">Misterio</option>
+                    <option value="romance">Romance</option>
+                    <option value="shonen">Shonen</option>
+                    <option value="shojo">Shojo</option>
+                    <option value="sobrenatural">Sobrenatural</option>
+                    <option value="terror">Terror</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="mangas-views">
+            <div class="manga-container">
+                <div class="manga-card">
+                    <img src="./assets/img/manga-1.webp" alt="">
+                    <div class="box-text">
+                        <h2>Jujutsu Kaisen</h2>
+                    </div>
+                </div>
+                <div class="manga-card">
+                    <img src="./assets/img/manga-2.webp" alt="">
+                    <div class="box-text">
+                        <h2>Naruto</h2>
+                    </div>
+                </div>
+                <div class="manga-card">
+                    <img src="./assets/img/manga-3.webp" alt="">
+                    <div class="box-text">
+                        <h2>Death Note</h2>
+                    </div>
+                </div>
+                <div class="manga-card">
+                    <img src="./assets/img/manga-4.webp" alt="">
+                    <div class="box-text">
+                        <h2>ChainSaw Man</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="manga-container">
+                <div class="manga-card">
+                    <img src="./assets/img/manga-5.webp" alt="">
+                    <div class="box-text">
+                        <h2>Hell's Paradise</h2>
+                    </div>
+                </div>
+                <div class="manga-card">
+                    <img src="./assets/img/manga-6.webp" alt="">
+                    <div class="box-text">
+                        <h2>Go Toubun no Hanayome</h2>
+                    </div>
+                </div>
+                <div class="manga-card">
+                    <img src="./assets/img/manga-7.webp" alt="">
+                    <div class="box-text">
+                        <h2>Tokyo Ghoul</h2>
+                    </div>
+                </div>
+                <div class="manga-card">
+                    <img src="./assets/img/manga-8.webp" alt="">
+                    <div class="box-text">
+                        <h2>One Piece</h2>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="manga-container">
+                
+                <div class="manga-card">
+                    <img src="./assets/img/manga-9.webp" alt="">
+                    <div class="box-text">
+                        <h2>DragonBall Super</h2>
+                    </div>
+                </div>
+                <div class="manga-card">
+                    <img src="./assets/img/manga-10.webp" alt="">
+                    <div class="box-text">
+                        <h2>Call of the Night</h2>
+                    </div>
+                </div>
+                <div class="manga-card">
+                    <img src="./assets/img/manga-11.webp" alt="">
+                    <div class="box-text">
+                        <h2>SpyXFamily</h2>
+                    </div>
+                </div>
+                <div class="manga-card">
+                    <img src="./assets/img/manga-12.webp" alt="">
+                    <div class="box-text">
+                        <h2>Tsuki Ga Michibiku Isekai </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <script src="./public/js/script.js" defer></script>
+</body>
+</html>

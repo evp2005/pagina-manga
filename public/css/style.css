@@ -1,0 +1,302 @@
+:root {
+    --blanco_gris: #e5efe9;
+    --gris: #d8d8d8;
+    --canela: #bf9a7f;
+    --piel: #b3969a;
+    --rojo_claro: #7f3943;
+    --rojo-oscuro: #430709;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'La Machine Company', sans-serif;
+    font-size: 15px;
+    background-color: var(--blanco_gris);
+}
+
+/* Estilos para el menú en pantallas grandes */
+
+.seccion-mangas h1{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    font-size: 300%;
+    color: var(--rojo_claro);
+}
+
+.seccion-mangas h3{
+    margin-left: 100px;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 5rem;
+    font-size: 300%;
+    color: var(--rojo-oscuro);
+}
+
+/* Estilos para activar con el clic */
+.seccion-mangas h1, 
+.seccion-mangas h3 {
+    transition: all 0.3s ease;
+}
+
+/* Estado activado */
+.margen-activo h1 {
+    margin-top: 3rem;
+    font-size: 200%;
+    color: var(--rojo_claro);
+}
+
+.margen-activo h3 {
+    margin-left: 60px;
+    font-size: 200%;
+    color: var(--rojo-oscuro);
+}
+
+
+
+
+/* .seccion-mangas h1{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    font-size: 200%;
+    color: var(--rojo_claro);
+} */
+
+/* .seccion-mangas h3{
+    margin-left: 16px;
+    font-size: 200%;
+    color: var(--rojo-oscuro);
+} */
+
+a {
+    padding: 5px;
+    color: var(--gris);
+    text-decoration: none;
+}
+
+.logo-titulo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-titulo img {
+    height: 3rem;
+    width: auto;
+    margin-left: -10px;
+}
+
+.logo-titulo h1 {
+    font-size: 28px;
+    text-decoration: none;
+    color: var(--blanco_gris);
+    padding: 10px;
+}
+
+.menu-bar nav {
+    display: flex;
+    gap: 15px;
+}
+
+.menu-bar nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 5px 10px;
+}
+
+.menu-bar nav a:hover {
+    background-color: var(--rojo-oscuro);
+    border-radius: 5px;
+}
+
+div > img{
+    border-radius: 8px;
+    width: 60%;
+    height: 50%;
+    box-shadow: 0px 0px 10px black;
+}
+
+.mangas-views {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    margin: 2rem;
+}
+
+.manga-container {
+    width: 95%;
+    margin-top: -25px;
+}
+
+.manga-card img {
+    border-style: solid;
+    border-top: 10px solid var(--rojo-oscuro);
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px black;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.box-text {
+    cursor: pointer;
+}
+
+.manga-card {
+    text-align: center;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+/* Estado inicial (sin margen) */
+.seccion-mangas {
+    transition: margin-left 0.3s ease;
+}
+
+/* Se aplica cuando se hace clic en el botón */
+.margen-activo {
+    margin-left: 179px;
+}
+
+/* Ajuste en modo responsive */
+@media (max-width: 768px) {
+    .seccion-mangas h3 {
+        margin-left: 40px;  /* Menor margen a la izquierda */
+        text-align: left;   /* Alineado hacia la izquierda */
+        font-size: 180%;    /* Tamaño de fuente ligeramente más pequeño */
+    }
+
+    .margen-activo h3 {
+        margin-left: 16px;
+        font-size: 200%;
+        color: var(--rojo-oscuro);
+    }
+
+    .search-reducido {
+        width: 70px !important;  /* Nuevo ancho */
+    }
+
+}
+
+/* Estilo Barra Lateral */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#sidebar {
+    position: fixed;
+    width: 179px;
+    top: -0.5px;
+    height: 150%;
+    background: #151719;
+    left: -200px;
+    transition: all 0.15s linear;
+    border-style: solid;
+}
+
+#sidebar.active {
+    left: 0px;
+}
+
+#sidebar ul li {
+    color: rgba(230, 230, 230, .9);
+    list-style: none;
+    padding: 15px 10px;
+    text-align: center;
+}
+
+.logo {
+    width: 80px;
+    display: block;
+    margin: 0 auto; 
+}
+
+
+.menu {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-decoration: none;
+}
+
+.sidebar h1{
+    font-size: 18px;
+}
+
+#sidebar .toggle-btn {
+    position: absolute;
+    left: 215px;
+    cursor: pointer;
+}
+
+#sidebar .toggle-btn span {
+    width: 40px;
+    text-align: center;
+    font-size: 30px;
+    border: 3px solid var(--rojo-oscuro);
+    border-radius: 5px;
+}
+
+/* Barra Busqueda */
+.search-icon {
+    width: 20px;
+    height: 20px;
+    margin-left: -30px;
+}
+
+/* Estilo para el input de búsqueda */
+.search-input {
+    width: 220px;
+    padding: 10px 15px;
+    border: 2px solid var(--rojo_claro);  /* Borde negro */
+    outline: none;
+    border-radius: 25px;  /* Bordes redondeados */
+    background-color: #f0f0f0;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.search-input:focus {
+    background-color: #fff;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    border-color: var(--rojo-oscuro);  /* Mantiene el borde negro al enfocar */
+}
+
+/* Estilo para el select de filtro */
+#filtro {
+    width: 63px;
+    margin-top: 5px;
+    padding: 10px 15px;
+    border: 2px solid var(--rojo_claro);  /* Borde negro */
+    outline: none;
+    border-radius: 25px;  /* Bordes redondeados */
+    background-color: #f0f0f0;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    appearance: none;  /* Elimina el estilo predeterminado del navegador */
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+#filtro:focus {
+    background-color: #fff;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    border-color: var(--rojo-oscuro);  /* Mantiene el borde negro al enfocar */
+}
+
+
+.filtro-bar {
+    margin-left: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 50px;
+    gap: 25px;
+    align-items: end;
+    margin-top: 10px;
+}
