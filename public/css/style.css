@@ -15,6 +15,7 @@
 
 body {
     font-family: 'La Machine Company', sans-serif;
+    src: url('../../assets/font/La Machine Company.ttf') format('truetype');
     font-size: 15px;
     background-color: var(--blanco_gris);
 }
