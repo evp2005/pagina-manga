@@ -8,8 +8,8 @@
 }
 
 @font-face {
-    font-family: 'LaMachineCompany';
-    src: url('../../assets/font/La%20Machine%20Company.ttf') format('truetype');
+    font-family: 'La-Machine-Company';
+    src: url('../../assets/font/La-Machine-Company.woff') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -21,7 +21,7 @@
 }
 
 body {
-    font-family: 'La Machine Company', sans-serif;
+    font-family: 'La-Machine-Company', sans-serif;
     font-size: 15px;
     background-color: var(--blanco_gris);
 }
